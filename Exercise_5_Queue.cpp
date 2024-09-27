@@ -27,17 +27,11 @@ void ClearQueue(queue<string> &pl)
 }
 void CheckQueue(queue<string>pl)
 {
-    if(pl.size()== max_size-3){
-    cout<<"Queue is empty"<<endl;
-    }
-    else if(pl.size()==max_size-2){
-    cout<<"Queue is Full"<<endl;
-    }
-    else if(pl.size()==max_size-1){
-    cout<<"Queue is Full"<<endl;
+    if(pl.size()==0){
+    cout<<"Queue is Empty"<<endl;
     }
     else{
-        cout<<"Error"<<endl;
+        cout<<"Queue is Full"<<endl;
     }
 }
 int main()
